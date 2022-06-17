@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun 17 15:39:17 2022
+# Make data base, printed on Fri Jun 17 18:01:34 2022
 
 # Variables
 
@@ -43,7 +43,7 @@ XAUTHORITY = /tmp/xauth-1000-_0
 # default
 MAKE_VERSION := 4.2.1
 # makefile
-CURDIR := /home/andysantisteban/Documents/micro-product-go
+CURDIR := /home/andysantisteban/Documents/auth-server
 # makefile
 SHELL = /bin/sh
 # environment
@@ -73,7 +73,7 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 LC_NAME = agr_PE
 # environment
-VSCODE_CWD = /home/andysantisteban/Documents/micro-product-go
+VSCODE_CWD = /home/andysantisteban/Documents/auth-server
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # environment
@@ -93,7 +93,7 @@ SESSION_MANAGER = local/andysantisteban-HP-Laptop-15-gw0xxx:@/tmp/.ICE-unix/1802
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-WINDOWID = 94371847
+WINDOWID = 92274695
 # environment
 GOPATH = /home/andysantisteban/go
 # environment
@@ -105,7 +105,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/andysantisteban/.gtkrc-2.0:/home/andysantisteban/.config/gtkrc-2.0
 # environment
-PROFILEHOME = /home/andysantisteban/Documents/micro-product-go
+PROFILEHOME = /home/andysantisteban/Documents/auth-server
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -125,7 +125,7 @@ XCURSOR_THEME = Vimix-cursors
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /home/andysantisteban/Documents/micro-product-go
+PWD = /home/andysantisteban/Documents/auth-server
 # environment
 KDE_SESSION_VERSION = 5
 # default
@@ -149,7 +149,7 @@ VSCODE_CODE_CACHE_PATH = /home/andysantisteban/.config/Code/CachedData/4af164ea3
 # environment
 LOGNAME = andysantisteban
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 NVM_CD_FLAGS = 
 # automatic
@@ -177,7 +177,7 @@ MAKECMDGOALS := all
 # environment
 SHLVL = 1
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-5ce2188a-3321-4385-bcf5-7e9165b09b02.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e56a2755-2a68-4f43-91bc-cbc0b33f844b.sock
 # environment
 XDG_SESSION_ID = 3
 # environment
@@ -215,7 +215,7 @@ MFLAGS = -pqrR
 # environment
 NVM_DIR = /home/andysantisteban/.nvm
 # environment
-SHELL_SESSION_ID = 7f11396a503642b9b546a8a03aa49607
+SHELL_SESSION_ID = 052fecd02f4f4cd1bb2650727c177d32
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
@@ -245,7 +245,7 @@ SUFFIXES :=
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
-KONSOLE_DBUS_SERVICE = :1.3588
+KONSOLE_DBUS_SERVICE = :1.5259
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
@@ -271,9 +271,9 @@ KDE_SESSION_UID = 1000
 
 # Directories
 
-# . (device 66306, inode 12463183): 13 files, no impossibilities.
+# . (device 66306, inode 12463183): 12 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -305,7 +305,6 @@ makefile:
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -324,12 +323,13 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 196 B / avg = 9 B
-# current buf: size = 8162 B / used = 196 B / count = 21 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 174 B / avg = 8 B
+ 
+# current buf: size = 8162 B / used = 174 B / count = 20 / avg = 8 B
 
-# strcache performance: lookups = 24 / hit rate = 12%
+# strcache performance: lookups = 23 / hit rate = 13%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=1/24=4%
-# Finished Make data base on Fri Jun 17 15:39:17 2022
+# Load=20/8192=0%, Rehash=0, Collisions=1/23=4%
+# Finished Make data base on Fri Jun 17 18:01:34 2022
 
  

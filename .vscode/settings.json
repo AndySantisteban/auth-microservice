@@ -47,5 +47,8 @@
     "usuario",
     "valido",
     "Villegas"
-  ]
+  ],
+  "go.toolsEnvVars": {
+    "GONOPROXY": ""
+  }
 }

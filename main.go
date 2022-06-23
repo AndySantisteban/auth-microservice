@@ -31,7 +31,6 @@ func main() {
 	authRouter.HandleFunc("/signin", sic.SigninHandler).Methods("GET")
 
 	ch := gohandlers.CORS(gohandlers.AllowedOrigins([]string{"http://localhost:4001"}))
-
 	server := &http.Server{
 		Addr:    "127.0.0.1:4001",
 		Handler: ch(mainRouter),

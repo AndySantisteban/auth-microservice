@@ -1,5 +1,11 @@
 package data
 
+import (
+	"database/sql"
+	"log"
+
+	_ "github.com/go-sql-driver/mysql"
+)
 type user struct {
 	email        string
 	username     string
@@ -8,6 +14,7 @@ type user struct {
 	createDate   string
 	role         int
 }
+
 
 var userList = []user{
 	{
@@ -29,11 +36,31 @@ var userList = []user{
 }
 
 func GetUserObject(email string) (user, bool) {
-	for _, user := range userList {
-		if user.email == email {
-			return user, true
-		}
+	db, err := sql.Open("mysql", "root:@tcp(127.0.0.1:3306)/usuarios")
+
+    if err != nil {
+        log.Print(err.Error())
+    }
+    defer db.Close()
+
+    results, err := db.Query("SELECT username, password FROM users")
+    if err != nil {
+        panic(err.Error()) 
+    }
+
+    for results.Next() {
+        var tag user
+        err = results.Scan(&tag.email, &tag.passwordhash)
+        if err != nil {
+            panic(err.Error()) 
+        }
+        
+		if tag.email == email {
+			return tag, true
 	}
+        log.Printf(tag.email, tag.passwordhash)
+    }
+
 	return user{}, false
 }
 
